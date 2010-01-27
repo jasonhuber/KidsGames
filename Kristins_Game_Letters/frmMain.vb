@@ -202,7 +202,7 @@ Public Class frmMain
         Me.Controls.Add(Me.LinkLabel3)
         Me.Menu = Me.MainMenu1
         Me.Name = "frmMain"
-        Me.Text = "Kristin's Game"
+        Me.Text = "Kaylin's Game"
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
         '**        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -212,8 +212,7 @@ Public Class frmMain
 #End Region
 #Region "All of my Dims"
     Dim recSize As Rectangle
-    Dim mainagent As AxAgentObjects.AxAgent
-    Private mSpeaker As AgentObjects.IAgentCtlCharacter
+
     Dim gstrColor As String
     Dim gintWaiting As Integer
     Dim gintRandom As Integer
@@ -229,15 +228,7 @@ Public Class frmMain
         Timer1.Enabled = False
         Call FullScreen(Me)
         Call SetupQuads()
-        Try
-            mainagent = AxAgent1
-            mainagent.Characters.Load("Peedy", "C:\windows\msagent\chars\peedy.acs")
-            mSpeaker = mainagent.Characters("Peedy")
-            mSpeaker.SoundEffectsOn = True
-        Catch mspeakerE As Exception
-            MessageBox.Show("I am sorry that I could not load Peedy!. Please tell your mom or dad!", "Could not find Peedy!")
-            End
-        End Try
+        
 
         Call GameStart()
     End Sub
@@ -330,7 +321,7 @@ Public Class frmMain
 #End Region
 
     Private Sub GameStart()
-        Dim tts As New 
+
         lnklblArray(0) = lnklblOne
         lnklblArray(1) = lnklblTwo
         lnklblArray(2) = lnklblThree
@@ -347,10 +338,8 @@ Public Class frmMain
 
         gstrColor = strColor
         gintRandom = intRandom
-        If gstrColor = "A" Then
-            gstrColor = "ay"
-        End If
-        Call SaySomething("Kristin please click on the letter " & gstrColor & "")
+       
+        Call SaySomething("Kaylin please click on the letter " & gstrColor & "")
     End Sub
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         gintWaiting += 1
@@ -363,35 +352,21 @@ Public Class frmMain
         If lnklblArray(gintRandom) Is sender Then
             Timer1.Enabled = False
             Call Clearallbuttherightone()
-            Call SaySomething("Good job Kristin, that is the letter " & gstrColor)
-            SpecialRequest = mSpeaker.Speak("You got it right!")
+            Call SaySomething("Good job Kaylin, that is the letter " & gstrColor)
             intCorrect += 1
             MainMenu1.MenuItems(1).Text = "Correct: " & intCorrect
+            Call GameStart()
         Else
             intWrong += 1
             MainMenu1.MenuItems(2).Text = "Incorrect: " & intWrong
             Call SaySomething("Good try, but we are looking for the letter " & gstrColor & "!")
         End If
     End Sub
-    Private Sub AxAgent1_RequestComplete(ByVal sender As Object, ByVal e As AxAgentObjects._AgentEvents_RequestCompleteEvent) Handles AxAgent1.RequestComplete
-        If e.request Is SpecialRequest Then
-            'MsgBox(e.ToString)
-            Call GameStart()
-        End If
-    End Sub
     Private Sub SaySomething(ByVal sText As String)
-        If MainMenu1.MenuItems(0).MenuItems(0).Checked Then
-            Try
-                mSpeaker.Show(0)
-                mSpeaker.Speak(sText)
-                Timer1.Enabled = True
-                gintWaiting = 1
-            Catch e As Exception
-                MessageBox.Show("I could not show the agent", "No agent to show")
-            End Try
-        Else
-            '**            AxTextToSpeech1.Speak(sText)
-        End If
+        '**            AxTextToSpeech1.Speak(sText)
+        Dim synth As New System.Speech.Synthesis.SpeechSynthesizer
+        synth.
+        synth.Speak(sText)
     End Sub
    
 End Class
