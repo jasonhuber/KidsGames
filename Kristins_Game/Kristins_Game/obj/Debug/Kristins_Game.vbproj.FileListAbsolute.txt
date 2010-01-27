@@ -1,0 +1,14 @@
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.vbproj.ResolveComReference.cache
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.exe
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.pdb
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\bin\Kristins_Game.exe
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\bin\Kristins_Game.pdb
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\bin\Kristins_Game.xml
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\bin\Interop.AgentObjects.dll
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\bin\AxInterop.AgentObjects.dll
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Interop.AgentObjects.dll
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\AxInterop.AgentObjects.dll
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.frmMain.resources
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.vbproj.GenerateResource.Cache
+C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.xml
