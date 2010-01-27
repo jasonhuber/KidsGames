@@ -41,7 +41,7 @@ Public Class frmMain
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
-    '**    Friend WithEvents AxTextToSpeech1 As AxHTTSLib.AxTextToSpeech
+    Friend WithEvents AxTextToSpeech1 As AxHTTSLib.AxTextToSpeech
     Friend WithEvents MainMenu1 As System.Windows.Forms.MainMenu
     Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
@@ -60,14 +60,14 @@ Public Class frmMain
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel
         Me.LinkLabel3 = New System.Windows.Forms.LinkLabel
-        '**        Me.AxTextToSpeech1 = New AxHTTSLib.AxTextToSpeech
+        Me.AxTextToSpeech1 = New AxHTTSLib.AxTextToSpeech
         Me.MainMenu1 = New System.Windows.Forms.MainMenu
         Me.MenuItem1 = New System.Windows.Forms.MenuItem
         Me.MenuItem2 = New System.Windows.Forms.MenuItem
         Me.MenuItem3 = New System.Windows.Forms.MenuItem
         Me.MenuItem4 = New System.Windows.Forms.MenuItem
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
-        '**        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'AxAgent1
@@ -153,14 +153,14 @@ Public Class frmMain
         '
         'AxTextToSpeech1
         '
-        '**        'Me.AxTextToSpeech1.Enabled = True
-        'Me.AxTextToSpeech1.Location = New System.Drawing.Point(184, 120)
-        'Me.AxTextToSpeech1.Name = "AxTextToSpeech1"
-        'Me.AxTextToSpeech1.OcxState = CType(resources.GetObject("AxTextToSpeech1.OcxState"), System.Windows.Forms.AxHost.State)
-        'Me.AxTextToSpeech1.Size = New System.Drawing.Size(192, 192)
-        'Me.AxTextToSpeech1.TabIndex = 9
-        'Me.AxTextToSpeech1.Visible = False
-        ''
+        Me.AxTextToSpeech1.Enabled = True
+        Me.AxTextToSpeech1.Location = New System.Drawing.Point(184, 120)
+        Me.AxTextToSpeech1.Name = "AxTextToSpeech1"
+        Me.AxTextToSpeech1.OcxState = CType(resources.GetObject("AxTextToSpeech1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxTextToSpeech1.Size = New System.Drawing.Size(192, 192)
+        Me.AxTextToSpeech1.TabIndex = 9
+        Me.AxTextToSpeech1.Visible = False
+        '
         'MainMenu1
         '
         Me.MainMenu1.MenuItems.AddRange(New System.Windows.Forms.MenuItem() {Me.MenuItem1, Me.MenuItem3, Me.MenuItem4})
@@ -191,7 +191,7 @@ Public Class frmMain
         '
         Me.AutoScaleBaseSize = New System.Drawing.Size(5, 13)
         Me.ClientSize = New System.Drawing.Size(568, 422)
-        '**       Me.Controls.Add(Me.AxTextToSpeech1)
+        Me.Controls.Add(Me.AxTextToSpeech1)
         Me.Controls.Add(Me.lnklblFour)
         Me.Controls.Add(Me.lnklblThree)
         Me.Controls.Add(Me.lnklblTwo)
@@ -204,7 +204,7 @@ Public Class frmMain
         Me.Name = "frmMain"
         Me.Text = "Kristin's Game"
         CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
-        '**        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -330,7 +330,6 @@ Public Class frmMain
 #End Region
 
     Private Sub GameStart()
-        Dim tts As New 
         lnklblArray(0) = lnklblOne
         lnklblArray(1) = lnklblTwo
         lnklblArray(2) = lnklblThree
@@ -390,8 +389,10 @@ Public Class frmMain
                 MessageBox.Show("I could not show the agent", "No agent to show")
             End Try
         Else
-            '**            AxTextToSpeech1.Speak(sText)
+            AxTextToSpeech1.Speak(sText)
         End If
     End Sub
-   
+    Private Sub AxTextToSpeech1_SpeakingDone(ByVal sender As Object, ByVal e As System.EventArgs) Handles AxTextToSpeech1.SpeakingDone
+
+    End Sub
 End Class

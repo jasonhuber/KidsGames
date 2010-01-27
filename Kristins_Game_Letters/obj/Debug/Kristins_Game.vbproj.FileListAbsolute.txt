@@ -1,0 +1,8 @@
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Interop.AgentObjects.dll
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\AxInterop.AgentObjects.dll
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Kristins_Game.vbproj.ResolveComReference.cache
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Kristins_Game.exe
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Kristins_Game.pdb
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Kristins_Game.frmMain.resources
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game_Letters\obj\Debug\Kristins_Game.vbproj.GenerateResource.Cache
