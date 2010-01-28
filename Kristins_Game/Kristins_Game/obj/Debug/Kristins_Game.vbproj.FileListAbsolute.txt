@@ -12,3 +12,9 @@ C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\AxInterop.AgentObje
 C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.frmMain.resources
 C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.vbproj.GenerateResource.Cache
 C:\Users\Jason\Desktop\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.xml
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\Interop.AgentObjects.dll
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\AxInterop.AgentObjects.dll
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.vbproj.ResolveComReference.cache
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.exe
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.xml
+C:\Users\Jason\Documents\My Dropbox\Personal\KidsGames\Kristins_Game\Kristins_Game\obj\Debug\Kristins_Game.pdb

@@ -31,7 +31,6 @@ Public Class frmMain
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    Friend WithEvents AxAgent1 As AxAgentObjects.AxAgent
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents lnklblOne As System.Windows.Forms.LinkLabel
@@ -41,7 +40,6 @@ Public Class frmMain
     Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel2 As System.Windows.Forms.LinkLabel
     Friend WithEvents LinkLabel3 As System.Windows.Forms.LinkLabel
-    '**    Friend WithEvents AxTextToSpeech1 As AxHTTSLib.AxTextToSpeech
     Friend WithEvents MainMenu1 As System.Windows.Forms.MainMenu
     Friend WithEvents MenuItem1 As System.Windows.Forms.MenuItem
     Friend WithEvents MenuItem2 As System.Windows.Forms.MenuItem
@@ -50,7 +48,6 @@ Public Class frmMain
     <System.Diagnostics.DebuggerStepThrough()> Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.Resources.ResourceManager = New System.Resources.ResourceManager(GetType(frmMain))
-        Me.AxAgent1 = New AxAgentObjects.AxAgent
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.lnklblOne = New System.Windows.Forms.LinkLabel
@@ -66,19 +63,7 @@ Public Class frmMain
         Me.MenuItem2 = New System.Windows.Forms.MenuItem
         Me.MenuItem3 = New System.Windows.Forms.MenuItem
         Me.MenuItem4 = New System.Windows.Forms.MenuItem
-        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).BeginInit()
-        '**        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'AxAgent1
-        '
-        Me.AxAgent1.Enabled = True
-        Me.AxAgent1.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.AxAgent1.Location = New System.Drawing.Point(272, 408)
-        Me.AxAgent1.Name = "AxAgent1"
-        Me.AxAgent1.OcxState = CType(resources.GetObject("AxAgent1.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxAgent1.Size = New System.Drawing.Size(32, 32)
-        Me.AxAgent1.TabIndex = 4
         '
         'Timer1
         '
@@ -196,15 +181,12 @@ Public Class frmMain
         Me.Controls.Add(Me.lnklblThree)
         Me.Controls.Add(Me.lnklblTwo)
         Me.Controls.Add(Me.lnklblOne)
-        Me.Controls.Add(Me.AxAgent1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.LinkLabel3)
         Me.Menu = Me.MainMenu1
         Me.Name = "frmMain"
         Me.Text = "Kaylin's Game"
-        CType(Me.AxAgent1, System.ComponentModel.ISupportInitialize).EndInit()
-        '**        CType(Me.AxTextToSpeech1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -365,7 +347,7 @@ Public Class frmMain
     Private Sub SaySomething(ByVal sText As String)
         '**            AxTextToSpeech1.Speak(sText)
         Dim synth As New System.Speech.Synthesis.SpeechSynthesizer
-        synth.
+
         synth.Speak(sText)
     End Sub
    
